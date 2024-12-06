@@ -1,4 +1,4 @@
-// ** CREATING AN API TO FETCH ALL RESTAURANT DETAILS ** //
+// ** CREATING AN API FOR RESTAURANT ** //
 
 import { connectionSTR } from "@/app/library/database";
 import { restaurantSchema } from "@/app/library/models/restaurantModel";
@@ -7,9 +7,9 @@ import { NextResponse } from "next/server";
 
 // creating a GET function to fetch restaurant details
 export async function GET() {
-
+    
     await mongoose.connect(connectionSTR, {useNewUrlParser: true});
-
+    
     // connection mongodb using connectionURI link
 
     const data = await restaurantSchema.find();
@@ -23,4 +23,18 @@ export async function GET() {
     return NextResponse.json({result: data})
     // printing data to browser console
     
+}
+
+// creating a POST function to register restaurant details
+export async function POST(request) {
+    let payload = await request.json();
+    // get the post data send by form 
+
+    await mongoose.connect(connectionSTR, {useNewUrlParser:true});
+
+    let restaurant = new restaurantSchema(payload);
+
+    const result = await restaurant.save();
+
+    return NextResponse.json({result, success: true});
 }

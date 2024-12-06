@@ -1,0 +1,53 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    border-bottom: 1px solid #ececec;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+}
+
+.icon button,
+.icon a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    background: #f1f1f1;
+    margin: 5px;
+    border: 1px solid #ebebeb;
+    border-radius: 50%;
+}
+
+
+.icon button:hover,
+.icon a:hover{
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.icon button i,
+.icon a i{
+    padding-top: 5px;
+}
+
+.icon p{
+    color: #777;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+
+
+
+

@@ -1,0 +1,10 @@
+.dashboardWrapper{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 80px 1fr;
+}
+
+.dashboardWrapper .wrapper{
+    width: 100%;
+    padding: 20px;
+}

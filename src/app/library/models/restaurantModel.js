@@ -5,8 +5,11 @@ const { default: mongoose } = require("mongoose");
 
 const restauratModel = new mongoose.Schema({
     name:String,
-    location: String,
-    email: String
+    email:String,
+    city:String,
+    address:String,
+    phone:String,
+    password:String
 })
 
 // creating a restaurant model schema adding all database column in collection for fetching
