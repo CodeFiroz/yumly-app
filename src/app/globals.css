@@ -1,42 +1,60 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* -- google fonts {DM Sans, Poppins} --  */
+
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+/* -- flat icon regular rounded icons --  */
+
+:root{
+  --primary: #FF5200;
+  --background: #FFFFFF;
+  --foreground: #161A1F;
+  --dark: #161B1F;
+  --light: #F0F0F5;
+  --secondary: #686D70;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* -- css variables --  */
+
+::selection{
+  background: #ff8952;
+  color: #0e0d0d;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+html{
+  scroll-behavior: smooth;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-a {
-  color: inherit;
+body{
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+a{
   text-decoration: none;
+  color: inherit;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+button{
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+input{
+  outline: 0;
+}
+
+.container-x{
+  padding-left: 100px;
+  padding-right: 100px;
 }
