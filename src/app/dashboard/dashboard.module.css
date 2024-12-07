@@ -8,3 +8,71 @@
     width: 100%;
     padding: 20px;
 }
+
+.reviewGrid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.reviewGrid .box{
+    border: 1px solid #e6e6e6;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.reviewGrid .box h4{
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.reviewGrid .box p{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.reviewGrid .box i{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 22px;
+}
+
+.reviewGrid .box:first-child{
+    background: #000;
+    color: #fff;
+}
+
+.reviewGrid .box:first-child p{
+    color: #999;
+}
+
+.reviewGrid .box:first-child i{
+    background: #202020;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

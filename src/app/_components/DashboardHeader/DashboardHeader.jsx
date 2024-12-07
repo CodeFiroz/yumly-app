@@ -28,8 +28,8 @@ const DashboardHeader = () => {
 
       <div>
         <div className={styles.icon}>
-          <button title="Change Theme">
-            <i className="fi fi-rr-moon"></i>
+          <button title="Add Menu">
+            <i className="fi fi-rr-plus"></i>
           </button>
           <Link href="#" title="View Store">
             <i className="fi fi-rr-shop"></i>
